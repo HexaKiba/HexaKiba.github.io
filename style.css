@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --celeste: #7ce8f6;
+    --gris: #444;
+    --violeta: #ff68f2;
+    --azul: #0a0064;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background: #222;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 18vh;
+    background: #000;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    box-shadow: 0px 3px 10px #fff;
+}
+
+.head-left {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-left .logo img {
+    margin-left: 2vw;
+    height: 16vh;
+}
+
+.head-left h1 {
+    color: #fff;
+    cursor: default;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 5px 5px 3px #2ccfac, 5px 0px 10px #2ccfac, 5px 5px 25px #2ccfac, 5px 5px 40px #2ccfac;
+}
+
+.head-right {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.head-right div {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    border: 0px solid #000;
+    transition: .2s ease-in-out;
+}
+
+.head-right div:hover {
+    border: 7px solid #000;
+}
+
+.head-right div h2 {
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    color: #2ccfac;
+    text-shadow: 0px 0px 15px #000, 0px 0px 5px #000;
+    cursor: pointer;
+}
