@@ -42,7 +42,20 @@ body {
 
 .head-left .logo img {
     margin-left: 2vw;
-    height: 16vh;
+    height: 16vh;    
+    animation: image 5s linear infinite;
+}
+
+@keyframes image {
+    30% {
+        filter: brightness(1.5);
+    }
+    50% {
+        filter: brightness(0);
+    }
+    70% {
+        filter: brightness(1.5);
+    }
 }
 
 .head-left h1 {
