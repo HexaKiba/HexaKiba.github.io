@@ -20,16 +20,16 @@ body {
 }
 
 .head {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     height: 18vh;
-    margin-top: 10px;
+    top: 15px;
     background: #000;
-    border-top: 5px solid var(--celeste);
-    border-bottom: 5px solid var(--celeste);
+    border-top: 3px solid var(--celeste);
+    border-bottom: 3px solid var(--celeste);
     box-shadow: 0px 3px 10px var(--celeste), 0px -3px 10px var(--celeste);
-    transition: .5s ease-in 1.5s;
     transition-property: margin, border, box-shadow;
 }
 
@@ -50,22 +50,45 @@ body {
     cursor: default;
     font-size: 45px;
     font-family: 'Dancing Script', cursive;
-    transition: .5s ease-in 2s;
     text-shadow: 5px 5px 3px var(--celeste), 5px 0px 10px var(--celeste), 5px 5px 25px var(--celeste), 5px 5px 40px var(--celeste);
+    animation: title 5s linear infinite;
+}
+
+@keyframes title {
+    5% {
+        text-shadow: 5px 5px 3px var(--celeste), 5px 0px 10px var(--celeste), 5px 5px 25px var(--celeste), 5px 5px 40px var(--celeste);
+    }
+    10% {
+        text-shadow: 5px 5px 3px var(--negro), 5px 0px 10px var(--negro), 5px 5px 25px var(--negro), 5px 5px 40px var(--negro);
+    }
+    11% {
+        text-shadow: 5px 5px 3px var(--celeste), 5px 0px 10px var(--celeste), 5px 5px 25px var(--celeste), 5px 5px 40px var(--celeste);
+    }
+    13% {
+        text-shadow: 5px 5px 3px var(--negro), 5px 0px 10px var(--negro), 5px 5px 25px var(--negro), 5px 5px 40px var(--negro);
+    }
+    14% {
+        text-shadow: 5px 5px 3px var(--celeste), 5px 0px 10px var(--celeste), 5px 5px 25px var(--celeste), 5px 5px 40px var(--celeste);
+    }
+    100% {
+        text-shadow: 5px 5px 3px var(--celeste), 5px 0px 10px var(--celeste), 5px 5px 25px var(--celeste), 5px 5px 40px var(--celeste);
+    }
 }
 
 .head-right {
     width: 40vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
     margin-right: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .head-right div {
     display: grid;
     place-items: center;
-    grid-gap: 5px;
     width: 100%;
     height: 100%;
     background-color: #222;
@@ -74,18 +97,23 @@ body {
     border-top: 10px solid #000;
     border-radius: 20px;
     transition: .2s ease-in-out;
+    box-shadow: 0px 0px 0px #0ed6a9;
 }
 
 .head-right div:hover {
     border: 12px solid #000;
     background-color: #555;
+    box-shadow: 0px 0px 7px #0ed6a9;
 }
 
 .head-right div h2 {
     font-size: 24px;
     font-family: 'Dancing Script', cursive;
-    color: var(--celeste);
-    text-shadow: 0px 0px 15px var(--celeste), 0px 0px 5px var(--celeste);
-    transition: .5s ease-in 1.5s;
+    color: var(--blanco);
+    text-shadow: 5px 0px 10px var(--celeste), 5px 5px 25px var(--celeste), 5px 5px 40px var(--celeste);
     cursor: pointer;
+}
+
+main {
+    height: 300vh;
 }
