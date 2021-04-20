@@ -41,20 +41,23 @@ body {
 }
 
 .head-left .logo img {
-    margin-left: 2vw;
-    height: 16vh;    
-    animation: image 5s linear infinite;
+    z-index: -1;
+    top: 1%;
+    left: 20%;
+    height: 21vh;
+    position: fixed;
+    animation: image 10s linear infinite;
 }
 
 @keyframes image {
     30% {
-        filter: brightness(1.5);
+        opacity: 1;
     }
     50% {
-        filter: brightness(0);
+        opacity: 0;
     }
     70% {
-        filter: brightness(1.5);
+        opacity: 1;
     }
 }
 
@@ -109,12 +112,12 @@ body {
     border-bottom: 10px solid #000;
     border-top: 10px solid #000;
     border-radius: 20px;
-    transition: .2s ease-in-out;
+    transition: .5s ease;
     box-shadow: 0px 0px 0px #0ed6a9;
 }
 
 .head-right div:hover {
-    border: 12px solid #000;
+    border: 15px solid #000;
     background-color: #555;
     box-shadow: 0px 0px 7px #0ed6a9;
 }
